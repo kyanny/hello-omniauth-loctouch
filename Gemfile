@@ -36,3 +36,6 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+gem 'omniauth'
+gem 'omniauth-loctouch', :git => 'https://github.com/kyanny/omniauth-loctouch.git'
