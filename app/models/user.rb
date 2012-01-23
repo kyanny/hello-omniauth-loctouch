@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
       user.uid = auth['uid']
       user.screen_name = auth['info']['nickname']
       user.avatar_image_url = auth['info']['image']
-      user.profile_url = auth['info']['link']
+      user.profile_url = auth['info']['urls']['Loctouch']
     end
   end
 end
