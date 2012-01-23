@@ -39,3 +39,7 @@ gem 'jquery-rails'
 
 gem 'omniauth'
 gem 'omniauth-loctouch', :git => 'https://github.com/kyanny/omniauth-loctouch.git'
+
+group :development do 
+  gem 'net-http-spy'
+end
