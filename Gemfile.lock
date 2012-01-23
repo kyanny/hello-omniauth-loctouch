@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/kyanny/omniauth-loctouch.git
-  revision: e27f9191ba4ac6b4dc8fd079a7d47b5d7a63cc68
+  revision: 11e3f1164a7e646b1f06773467fad9efefea51e6
   specs:
     omniauth-loctouch (0.0.1)
       multi_json (~> 1.0.4)
