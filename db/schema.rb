@@ -14,12 +14,13 @@
 ActiveRecord::Schema.define(:version => 20120123132344) do
 
   create_table "users", :force => true do |t|
-    t.string   "provider",    :null => false
-    t.string   "uid",         :null => false
-    t.string   "screen_name", :null => false
-    t.string   "name",        :null => false
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.string   "provider",         :null => false
+    t.string   "uid",              :null => false
+    t.string   "screen_name",      :null => false
+    t.string   "avatar_image_url", :null => false
+    t.string   "profile_url",      :null => false
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   add_index "users", ["provider", "uid"], :name => "index_users_on_provider_and_uid"
