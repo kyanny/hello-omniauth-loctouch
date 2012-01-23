@@ -4,7 +4,8 @@ class CreateUsers < ActiveRecord::Migration
       t.string :provider, :null => false
       t.string :uid, :null => false
       t.string :screen_name, :null => false, :uniq => true
-      t.string :name, :null => false
+      t.string :avatar_image_url, :null => false
+      t.string :profile_url, :null => false
       t.timestamps
     end
     add_index :users, [:provider, :uid]

@@ -3,8 +3,9 @@ class User < ActiveRecord::Base
     create! do |user|
       user.provider = auth['provider']
       user.uid = auth['uid']
-      user.name = auth['user_info']['name']
-      user.screen_name = auth['user_info']['nickname']
+      user.screen_name = auth['info']['nickname']
+      user.avatar_image_url = auth['info']['image']
+      user.profile_url = auth['info']['link']
     end
   end
 end
